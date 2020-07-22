@@ -74,19 +74,19 @@ A versão testada nesse experimento foi a versão 5.1.1. O JMeter tem como pré-
 Abra o arquivo "jmeter.bat" localiza bin do pacote JMeter. <br />
 
   Passo 1: Configure as tarefas a serem executadas no teste (*Add -> Threads(Users) -> Thread Group*).
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-theadgroup.JPG)
+![](resources/images/jmeter-theadgroup.JPG)
   
   Passo 2: Configure uma requisição padrão com o *endpoint* (https://jsonplaceholder.typicode.com)  necessário para todas as solicitações (*Thread Group -> Config Element -> Http Request Default*).
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-httpdefault.JPG)
+![](resources/images/jmeter-httpdefault.JPG)
  
   Passo 3: Configure uma requisição de Criação de álbum (*Thread Group -> Sampler -> Http Request*).
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-CreateAlbumRequest.JPG)  
+![](resources/images/jmeter-CreateAlbumRequest.JPG)  
   
   Passo 4: Configure um *JSON Extractor* para obter o identificador do álbum criado (*Http Request -> Add -> Post Processor -> JSON Extractor*).
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-jsonextractoralbum.JPG) 
+![](resources/images/jmeter-jsonextractoralbum.JPG) 
 
   Passo 5: Configure uma requisição de Exclusão do álbum. (*Thread Group -> Sampler -> Http Request*)
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-deletealbumrequest.JPG) 
+  ![](resources/images/jmeter-deletealbumrequest.JPG) 
   
   Passo 6: Adicione um componente para avaliar o resultado das respostas, o que é útil na depuração do teste. (*Thread Group -> Add -> Listener -> View Results Tree*) 
   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeer-resultstree.JPG) 
