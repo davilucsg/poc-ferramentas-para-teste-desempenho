@@ -89,7 +89,7 @@ Abra o arquivo "jmeter.bat" localiza bin do pacote JMeter. <br />
   ![](resources/images/jmeter-deletealbumrequest.JPG) 
   
   Passo 6: Adicione um componente para avaliar o resultado das respostas, o que é útil na depuração do teste. (*Thread Group -> Add -> Listener -> View Results Tree*) 
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeer-resultstree.JPG) 
+  ![](resources/images/jmeer-resultstree.JPG) 
   
   O arquivo " TesteAlbum.jmx" foi criado seguindo todos esses passos.
 ##### EXECUÇÃO DO TESTE
@@ -102,27 +102,27 @@ Abra o arquivo "jmeter.bat" localiza bin do pacote JMeter. <br />
 ##### RESULTADOS:
   Abra a pasta *Report* criada, e abra o arquivo "index.html", no qual teremos métricas das requisições realizadas. 
 
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-results.JPG) 
+   ![](resources/images/jmeter-results.JPG) 
 
    Com o dashboard gerado temos facilmente as seguintes informações:
    
    - Tabela com dados estatísticos dos percentis 90, 95 e 99 do tempo de resposta, número de requisições por segundo, bytes recebidos e enviados:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-results-statistics.JPG) 
+   ![](resources/images/jmeter-results-statistics.JPG) 
 
    - Tempo de resposta médio das requisições ao longo do tempo de teste:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-results-overtime.JPG)
+   ![](resources/images/jmeter-results-overtime.JPG)
    
    - Série de percentis do tempo de resposta ao longo do tempo:
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-results-timepercentile.JPG)
+  ![](resources/images/jmeter-results-timepercentile.JPG)
 
   - Análise do tempo de resposta em relação ao volume de requisições:
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-responsetimeoverview.JPG)
+  ![](resources/images/jmeter-responsetimeoverview.JPG)
 
    -  Threads ativas ao longo do tempo:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-activetheads.JPG)
+   ![](resources/images/jmeter-activetheads.JPG)
 
    -  Latência média ao longo do tempo:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/jmeter-latencyovertime.JPG)
+   ![](resources/images/jmeter-latencyovertime.JPG)
 
 ### TESTE COM GATLING
 #### CONFIGURAÇÃO DO AMBIENTE:
@@ -172,20 +172,20 @@ Configurando os parâmetros *DiretorioDoScript* e *DiretoDoResulado* de acordo c
 
 ##### RESULTADOS:
  Abra a pasta "album - {*DataDeExecucao*}" criada, e abra o arquivo "index.html", no qual teremos métricas das requisições realizadas. 
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/gatling-results.JPG)
+![](resources/images/gatling-results.JPG)
   Com o dashboard gerado temos facilmente as seguintes informações:
 
 - Tabela com dados estatísticos dos percentis 90, 95 e 99 do tempo de resposta, número de requisições por segundo, bytes recebidos e enviados:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/gatling-statistics.JPG) 
+   ![](resources/images/gatling-statistics.JPG) 
 
 - Distribuição do tempo de resposta:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/resources/images/gatling-timedistribution.JPG)
+   ![](resources/images/gatling-timedistribution.JPG)
    
 - Série de percentis do tempo de resposta ao longo do tempo:
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/gatling-percentileovertime.JPG)
+  ![](resources/images/gatling-percentileovertime.JPG)
 
 - Usuários ativos ao longo do tempo:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/gatling-activeusers.JPG)
+   ![](resources/images/gatling-activeusers.JPG)
 
 ### TESTE COM LOCUST
 O Locust é uma ferramenta de código aberto escrita em *Python* para testes de desempenho em aplicações web. 
@@ -241,18 +241,18 @@ Uma aplicação na porta 8089 será "atachada" ao comando executado no console. 
 Após 1min de execução clique no botão Stop no canto superior esquerdo.
 Após isso será exibido o seguinte painel:
 
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/locust-results.JPG)
+![](resources/images/locust-results.JPG)
 
  A partir do qual será possível obter as métricas:
 
 - Tempo médio de resposta ao longo do tempo:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/locust-responsetime.JPG)
+   ![](resources/images/locust-responsetime.JPG)
    
 - Número de requisições por segundo ao longo do tempo:
-  ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/locust-requestperseccond.JPG)
+  ![](resources/images/locust-requestperseccond.JPG)
 
 - Usuários ativos ao longo do tempo:
-   ![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/locust-activeusers.JPG) 
+   ![](resources/images/locust-activeusers.JPG) 
 
 
 ### EXTRA: TESTE COM BLAZEMETER
@@ -262,29 +262,29 @@ Após isso será exibido o seguinte painel:
 #### EXEMPLO: EXECUÇÃO DE SCRIPT GERADO COM JMETER
 
 Criação de novo teste:
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-perfomancetest.JPG)
+![](resources/images/blazemeter-perfomancetest.JPG)
 
 A opção "*Performance Test*" permite o upload de scripts de testes enquanto a opção "Test Creation Tools" permite a gravação de cenários customizados por registro de um proxy configurado no seu computador.
 
 Selecione a opção "*Performance Test*":
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-uploadscript.JPG)
+![](resources/images/blazemeter-uploadscript.JPG)
 
 Clique no botão "Upload Script" e selecione o arquivo "TesteAlbum.jmx" criado nos testes com a ferramenta JMeter.
 
 Altere a localização da estação que irá executar os testes para "São Paulo - Brazil":
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-loaddistribution.JPG)
+![](resources/images/blazemeter-loaddistribution.JPG)
 
 Com uma conta paga é possível distribuir a carga do teste em várias estações localizadas em várias regiões do mundo.
 
 Também é possível integrar com ferramentas de APM ("*Application Performance Management*")
 de forma a integrar resultados do testes de desempenho a métricas diretamente relacionadas a infraestrutura da aplicação como percentual de utilização de CPU, consumo de memória, carga por servidores e etc.
 
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-apmintegration.JPG)
+![](resources/images/blazemeter-apmintegration.JPG)
 
 Clique no botão "*Run Test*" e espere a execução do 
 
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-testresults.JPG)
+![](resources/images/blazemeter-testresults.JPG)
 
 Na seção "*Time Line Report*" é possível consultar uma série de gráficos ao longo do tempo, como usuários ativos, requisições por segundo, tempo de reposta (percentil de 50, 90, 95 e 99), bytes recebidos por segundo e etc.
 Abaixo é mostrado um exemplo do tempo de resposta (percentil de 90, 95 e 99) das requisições feitas:
-![](https://github.com/davilucsg/poc-ferramentas-para-teste-desempenho/blob/master/resources/images/blazemeter-kpiselection.JPG)
+![](resources/images/blazemeter-kpiselection.JPG)
